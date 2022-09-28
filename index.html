@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app">
+        <header>
+          <input
+            type="text"
+            autocomplete="off"
+            class="search-box"
+            placeholder="Search for a city..."
+          />
+        </header>
+        <main>
+          <div class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+          </div>
+          <div class="current">
+            <div class="temp">
+              <span class="broj"></span>
+              <span class="stupanj"></span>
+            </div>
+            <div class="weather"></div>
+            <div class="hilow"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

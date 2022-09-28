@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/default.jpg);
+  font-family: "Montserrat", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+@keyframes example {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.app,
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+header {
+  padding: 100px 50px;
+}
+header input {
+  width: 95%;
+  max-width: 300px;
+  padding: 15px 35px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  border-radius: 20px 0px;
+  border-bottom: 3px solid rgb(255, 247, 0);
+  cursor: pointer;
+}
+header input:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+header input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  transition: 0.2s ease-out;
+  border-bottom: 3px solid rgb(59, 241, 59);
+  cursor: text;
+}
+
+.location,
+.current {
+  color: white;
+  text-align: center;
+  padding-bottom: 70px;
+  font-weight: 600;
+}
+.current > div {
+  padding-bottom: 15px;
+}
+.city,
+.temp {
+  font-size: 50px;
+}
+.temp {
+  font-weight: 900;
+  text-shadow: 2px 2px grey;
+}
+.date {
+  padding-top: 15px;
+}
+.weather {
+  font-style: italic;
+  font-size: 25px;
+  text-shadow: 2px 2px grey;
+}
+.hilow {
+  font-size: 20px;
+  text-shadow: 2px 2px grey;
+}
+.celzij::before {
+  content: "°C";
+}
+.fahr::before {
+  content: "F";
+}
